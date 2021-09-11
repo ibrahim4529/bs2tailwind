@@ -1,4 +1,5 @@
 # Bs2Tailwind
+![Demo Gif](demo.gif)
 
 ## [Demo](https://musing-morse-98f9ec.netlify.app/)
 
