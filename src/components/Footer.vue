@@ -8,7 +8,7 @@ const { loading, exec } = useAxios()
 const convertCode = () => {
   exec({
     method: 'POST',
-    url: 'http://localhost:8000/convert',
+    url: 'https://tailwind2bs.herokuapp.com/api/convert',
     data: {
       code: bsCode?.value,
     },
@@ -32,7 +32,7 @@ const convertCode = () => {
       <carbon-logo-github />
     </a>
     <button class="px-10 py-3 ml-auto text-sm bg-blue-600 rounded text-white" @click="convertCode">
-      {{ loading ? "Loading..." : "Convert" }}
+      {{ loading ? "Converting..." : "Convert" }}
     </button>
   </nav>
 </template>
