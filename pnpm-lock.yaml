@@ -7,9 +7,11 @@ specifiers:
   '@types/prismjs': ^1.16.6
   '@typescript-eslint/eslint-plugin': ^4.29.3
   '@vitejs/plugin-vue': ^1.6.0
+  '@vue-composable/axios': ^1.0.0-beta.23
   '@vue/compiler-sfc': ^3.2.6
   '@vueuse/core': ^6.0.0
   autoprefixer: ^10.3.4
+  axios: ^0.21.4
   bootstrap: '4'
   cross-env: ^7.0.3
   eslint: ^7.32.0
@@ -30,7 +32,9 @@ specifiers:
   vue-router: ^4.0.11
 
 dependencies:
+  '@vue-composable/axios': 1.0.0-beta.23
   '@vueuse/core': 6.0.0_vue@3.2.6
+  axios: 0.21.4
   bootstrap: 4.6.0
   prismjs: 1.24.1
   vue: 3.2.6
@@ -674,6 +678,14 @@ packages:
       '@vue/compiler-sfc': 3.2.6
     dev: true
 
+  /@vue-composable/axios/1.0.0-beta.23:
+    resolution: {integrity: sha512-ujkQ6BElrl/+cKeWA9scUM3NCdbA+WayP7wwNB7zIoTPM9eycf9+BSQOE747a8/Uposab+YwohFSLPTH3PFVoA==}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      vue-composable: 1.0.0-beta.23
+    dev: false
+
   /@vue/compiler-core/3.2.6:
     resolution: {integrity: sha512-vbwnz7+OhtLO5p5i630fTuQCL+MlUpEMTKHuX+RfetQ+3pFCkItt2JUH+9yMaBG2Hkz6av+T9mwN/acvtIwpbw==}
     dependencies:
@@ -935,6 +947,14 @@ packages:
     resolution: {integrity: sha512-SA5mXJWrId1TaQjfxUYghbqQ/hYioKmLJvPJyDuYRtXXenFNMjj4hSSt1Cf1xsuXSXrtxrVC5Ot4eU6cOtBDdA==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /axios/0.21.4:
+    resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
+    dependencies:
+      follow-redirects: 1.14.3
+    transitivePeerDependencies:
+      - debug
+    dev: false
 
   /balanced-match/1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
@@ -1827,6 +1847,16 @@ packages:
   /flatted/3.2.2:
     resolution: {integrity: sha512-JaTY/wtrcSyvXJl4IMFHPKyFur1sE9AUqc0QnhOaJ0CxHtAoIV8pYDzeEfAaNEtGkOfq4gr3LBFmdXW5mOQFnA==}
     dev: true
+
+  /follow-redirects/1.14.3:
+    resolution: {integrity: sha512-3MkHxknWMUtb23apkgz/83fDoe+y+qr0TdgacGIA7bew+QLBo3vdgEN2xEsuXNivpFy4CyDhBBZnNZOtalmenw==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: false
 
   /foreach/2.0.5:
     resolution: {integrity: sha1-C+4AUBiusmDQo6865ljdATbsG5k=}
@@ -3504,6 +3534,14 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
+
+  /vue-composable/1.0.0-beta.23:
+    resolution: {integrity: sha512-jtlEHcaLbN6ENHIiqABeBmGbtUuUEKCRaByerHudlpEcHTN4B47P/uRcrg93iL1iuWHl9OQeRqkyFIzjCF3MTQ==}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@vue/devtools-api': 6.0.0-beta.15
+    dev: false
 
   /vue-demi/0.11.3_vue@3.2.6:
     resolution: {integrity: sha512-DpM0TTMpclRZDV6AIacgg837zrim/C9Zn+2ztXBs9hsESJN9vC83ztjTe4KC4HgJuVle8YUjPp7HTwWtwOHfmg==}

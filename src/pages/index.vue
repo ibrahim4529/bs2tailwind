@@ -14,32 +14,40 @@ const highlighter = (code: any) => {
 </script>
 
 <template>
-  <div class="flex flex-row">
-    <div class="w-1/2 h-100">
+  <h1>Boostrap Code & View</h1>
+  <div class="flex flex-row mb-4">
+    <div class="h-60 flex-1 mr-4 overflow-scroll">
       <prism-editor
-        v-model="tailwindCode"
-        class="text-white flex-grow editor"
+        v-model="bsCode"
+        class="text-white bg-gray-900 editor overflow-scroll"
         :highlight="highlighter"
         line-numbers
       ></prism-editor>
     </div>
-    <div class="w-1/2">
-      <BootstrapView />
+    <div class="h-60 flex-1">
+      <BootstrapView class="overflow-scroll" />
     </div>
-    <div class="w-1/2">
-      <TailwindView />
+  </div>
+  <h1>Tailwind Code & View</h1>
+  <div class="flex flex-row ">
+    <div class="h-60 flex-1 overflow-scroll mr-4">
+      <prism-editor
+        v-model="tailwindCode"
+        class="text-white bg-gray-900 editor"
+        :highlight="highlighter"
+        line-numbers
+      ></prism-editor>
+    </div>
+    <div class="h-60 flex-1">
+      <TailwindView class="overflow-scroll" />
     </div>
   </div>
 </template>
 
-<style scoped>
+<style>
 
 .editor{
   font-family: Fira code, Fira Mono, Consolas, Menlo, Courier, monospace;
   font-size: 14px;
-  line-height: 1.5;
-  background-color: black;
-  padding: 5px;
-  height: 100%;
 }
 </style>
