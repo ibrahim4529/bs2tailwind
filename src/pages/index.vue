@@ -24,7 +24,7 @@ const highlighter = (code: any) => {
         line-numbers
       ></prism-editor>
     </div>
-    <div class="h-60 flex-1">
+    <div class="h-60 flex-1 overflow-scroll">
       <BootstrapView class="overflow-scroll" />
     </div>
   </div>
@@ -38,7 +38,7 @@ const highlighter = (code: any) => {
         line-numbers
       ></prism-editor>
     </div>
-    <div class="h-60 flex-1">
+    <div class="h-60 flex-1 overflow-scroll">
       <TailwindView class="overflow-scroll" />
     </div>
   </div>

@@ -4,7 +4,7 @@ const { tailwindCode } = useState()
 </script>
 
 <template>
-  <div class="container text-center">
+  <div class="container">
     <div class="use-tailwind" v-html="tailwindCode">
     </div>
   </div>

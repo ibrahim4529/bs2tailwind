@@ -4,7 +4,7 @@ const { bsCode } = useState()
 </script>
 
 <template>
-  <div class="container text-center">
+  <div class="container">
     <div class="use-bootstrap" v-html="bsCode"></div>
   </div>
 </template>
